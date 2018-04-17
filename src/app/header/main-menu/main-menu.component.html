@@ -1,0 +1,264 @@
+<ul>
+  <li><a (click)="activate(1)" (mouseover)="activate(1)">Kits</a></li>
+  <li><a (click)="activate(2)" (mouseover)="activate(2)">Claromizadores</a></li>
+  <li><a (click)="activate(3)" (mouseover)="activate(3)">Mods</a></li>
+  <li><a (click)="activate(4)" (mouseover)="activate(4)">Consumibles</a></li>
+  <li><a (click)="activate(5)" (mouseover)="activate(5)">Liquidos</a></li>
+  <li><a (click)="activate(6)" (mouseover)="activate(6)">Accesorios</a></li>
+</ul>
+
+<div *kitOverlay="displayMenu"
+     [kitOverlayPosition]="{type: 'dropdown', position: 'bottom', anchor: menuAnchor}"
+     [@fade]
+     class="sub"
+     (mouseleave)="displayMenu = false"
+     (kitOutsideClick)="displayMenu = false">
+  <div class="main-wrapper">
+    <div *kitSlide="1"
+         [@slide]="slideDirection | async"
+         class="section">
+      <div>
+        <div class="title">
+          Evod voltaje variable
+        </div>
+        <ul>
+          <li><a routerLink="/products">Evod Twist kit de inicio</a></li>
+          <li><a routerLink="/products">Evod kit 650mah</a></li>
+          <li><a routerLink="/products">Evod subvod kit 1300mah</a></li>
+          <li><a routerLink="/products">Evod twist 900mah</a></li>
+          <li><a routerLink="/products">Evod twist 900mah</a></li>
+          <li><a routerLink="/products"><b>Ver todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Evod voltaje fijo
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Mod Aluminio mecanico</a></li>
+          <li><a routerLink="/products">Evod 1100mah kit sencillo</a></li>
+          <li><a routerLink="/products">Evod 900mah kit sencillo</a></li>
+          <li><a routerLink="/products">Evod 1100mah Ah kit doble</a></li>
+          <li><a routerLink="/products/1">Evod 900mah Ah kit doble</a></li>
+          <li><a routerLink="/products"><b>Ver todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Otros mods inicio y vaporizadores
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Joyetech AIO kit 2ml 1500mah</a></li>
+          <li><a routerLink="/products/1">Kanger Kone kit de inicio</a></li>
+          <li><a routerLink="/products/1">Venti Wismec 3000mah 5.8ml</a></li>
+          <li><a routerLink="/products/1">Joyetech egrip OLED 20-30w 3.6ml</a></li>
+          <li><a routerLink="/products/1">Kamry k101 mod aluminio mecanico</a></li>
+          <li><a routerLink="/products/1">X6 kit mod aluminio VV</a></li>
+          <li><a routerLink="/products"><b>Ver todos</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <div *kitSlide="2"
+         [@slide]="slideDirection | async"
+         class="section">
+      <div>
+        <div class="title">
+          R B A & R D A 
+        </div>
+        <ul>
+          <li><a routerLink="/products">Bottom Coil</a></li>
+          <li><a routerLink="/products">Top Coil</a></li>
+          <li><a routerLink="/products">RDA</a></li>
+          <li><a routerLink="/products">RBA</a></li>
+          <li><a routerLink="/products">RDA 26650</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Claromizador Economico
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">CE4</a></li>
+          <li><a routerLink="/products">CE4 Reparable</a></li>
+          <li><a routerLink="/products">Evod</a></li>
+          <li><a routerLink="/products">T3 & T3 S</a></li>
+          <li><a routerLink="/products/1">DCT</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Tanques
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Kanger Tech</a></li>
+          <li><a routerLink="/products/1">Aspire</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <div *kitSlide="3"
+         [@slide]="slideDirection | async"
+         class="section">
+      <div>
+        <div class="title">
+          Mecanicos
+        </div>
+        <ul>
+          <li><a routerLink="/products">Wismec Noisy Cricket-Aluminio</a></li>
+          <li><a routerLink="/products">Mod Stingray X</a></li>
+          <li><a routerLink="/products">Dovpo GX200</a></li>
+          <li><a routerLink="/products">Atomo SS mod</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+         Electronicos
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Smok pen 22kit 2ml 1650mah</a></li>
+          <li><a routerLink="/products">Eleaf iCare 1.3ml 320 + 2300mah</a></li>
+          <li><a routerLink="/products">Kanger Subox Mini-c 3ml</a></li>
+          <li><a routerLink="/products">Smok Stick X8 Stick  3000mah</a></li>
+          <li><a routerLink="/products/1">Smok pro-color kit</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Pipas 
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Pipa DSE618</a></li>
+          <li><a routerLink="/products/1">Smok Guardian sub kit</a></li>
+          <li><a routerLink="/products/1">Smok Guardian III Full kit pipa negra</a></li>
+          <li><a routerLink="/products/1">Pipa Kamry K1000 color madera</a></li>
+          <li><a routerLink="/products/1">Pipa Kamry K1000 en estuche</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <div *kitSlide="4"
+         [@slide]="slideDirection | async"
+         class="section">
+      <div>
+        <div class="title">
+          Silica & Kanthal
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Speial wire, clapton, twisted</a></li>
+          <li><a routerLink="/products/1">Cable acero inoxidable A1 UD</a></li>
+          <li><a routerLink="/products/1">Titanio A1 ligthing vapes</a></li>
+          <li><a routerLink="/products/1">Ni200 Templado Nickel Ligthing Vapes</a></li>
+          <li><a routerLink="/products/1">Silica</a></li>
+          <li><a routerLink="/products"><b>Ver todos</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Algodon Organico
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Algodon Organico Japones</a></li>
+          <li><a routerLink="/products/1">Algodon Organico Americano Celluco  tton</a></li>
+          <li><a routerLink="/products/1">Algodon Organico Japones Shiseido</a></li>
+          <li><a routerLink="/products"><b>Ver Todos</b></a></li>
+        </ul>
+      </div>
+      
+    </div>
+    <div *kitSlide="5"
+         [@slide]="slideDirection | async"
+         class="section">
+      <div>
+        <div class="title">
+          Premium
+        </div>
+        <ul>
+          <li><a routerLink="/products">Uva Blanca</a></li>
+          <li><a routerLink="/products">Piña y Fresa</a></li>
+          <li><a routerLink="/products">Grosella</a></li>
+          <li><a routerLink="/products">Café Expreso</a></li>
+          <li><a routerLink="/products">Wiskey</a></li>
+          <li><a routerLink="/products">Cola</a></li>
+          <li><a routerLink="/products">Mojito</a></li>
+          <li><a routerLink="/products">Tabaco</a></li>
+          <li><a routerLink="/products">Yerbabuena</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Clones
+        </div>
+        <ul>
+          <li><a routerLink="/products">Snickers</a></li>
+          <li><a routerLink="/products">Skittles</a></li>
+          <li><a routerLink="/products">Milk Man</a></li>
+          <li><a routerLink="/products">Skittles Crazy Sour</a></li>
+          <li><a routerLink="/products">Suggar Drizzle</a></li>
+          <li><a routerLink="/products">Ver Todos</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Ultra
+        </div>
+        <ul>
+          <li><a routerLink="/products">Blueberry Cotton</a></li>
+          <li><a routerLink="/products">Bubble Gum</a></li>
+          <li><a routerLink="/products">Vainilla Ice</a></li>
+          <li><a routerLink="/products">Red Bull</a></li>
+          <li><a routerLink="/products">Apple Pie</a></li>
+          <li><a routerLink="/products">Chocolate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div *kitSlide="6"
+    [@slide]="slideDirection | async"
+    class="section">>
+        <div>
+            <div class="title">
+               Baterias
+            </div>
+            <ul>
+              <li><a routerLink="/products">MXJO Flat yellow 3000mah</a></li>
+              <li><a routerLink="/products">Samsung 2070 48gr 4800mah</a></li>
+              <li><a routerLink="/products">Samsung 3000mah 6amp 4.35V</a></li>
+              <li><a routerLink="/products">Panasonic 3400mah</a></li>
+              <li><a routerLink="/products">EVOD 1100mah</a></li>
+              <li><a routerLink="/products">EVOD 900mah</a></li>
+              <li><a routerLink="/products">Ver Todos</a></li>
+            </ul>
+          </div>
+          <div>
+              <div class="title">
+                DIY
+              </div>
+              <ul>
+                <li><a routerLink="/products">Prueba Nicotina</a></li>
+                <li><a routerLink="/products">Glicerina</a></li>
+                <li><a routerLink="/products">Propilenglicol</a></li>
+                <li><a routerLink="/products">Bote Inyector 10ml</a></li>
+                <li><a routerLink="/products">Bote Inyector 30ml</a></li>
+                <li><a routerLink="/products">Ver Todos</a></li>
+              </ul>
+            </div>
+            <div>
+                <div class="title">
+                  Partes de Repuesto
+                </div>
+                <ul>
+                  <li><a routerLink="/products">Resistencia smok TFV12</a></li>
+                  <li><a routerLink="/products">Resistencia smok TFV8 baby</a></li>
+                  <li><a routerLink="/products">Pyrex smok TFV12 6ml</a></li>
+                  <li><a routerLink="/products">Pyrex smok TFV8 6ml</a></li>
+                  <li><a routerLink="/products">kick 12W</a></li>
+                  <li><a routerLink="/products">kick Sigelei 15W</a></li>
+                  <li><a routerLink="/products">Ver Todos</a></li>
+                </ul>
+              </div>
+    </div>  
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="main-wrapper">
+  <div class="container">
+    <div class="login-panel">
+      <h2 class="title">Cliente Existente</h2>
+        <form>
+          <label>Correo</label>
+          <input [uiInput] name="email" [(ngModel)]="inputModel">
+          <label>Contraseña</label>
+          <input type="password" [uiInput] name="password" [(ngModel)]="inputModel">
+        </form>
+        <div class="forgotten-password">
+          <a href="">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="login-box">
+          <button class="login">Iniciar Sesion</button>
+        </div>
+    </div>
+    <div class="login-panel">
+      <h2 class="title">¿Nuevo en Nice Vaping?</h2>
+      <div class="login-box">
+        <button class="login" routerLink="../sign-up">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
