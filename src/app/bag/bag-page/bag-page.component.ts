@@ -10,6 +10,9 @@ export class BagPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+ 
   }
+
+
 
 }

@@ -3,46 +3,27 @@
     <div class="product-preview">
       <ui-photo-carousel [photos]="product.photos"></ui-photo-carousel>
       <div>
-        <h4>Description</h4>
-        <p> ‘Florence’ midi dress from premium Australian label, Bec & Bridge. Forming a fluid bodycon fit, the
-          sleeveless
-          dress is made from a mid-weight bonded crêpe with a hint of stretch and subtle darts at the bodice for a
-          contour-skimming silhouette. Slim satin shoulder straps feature with cross-over detailing to the rear and a
-          low back design. Falling to just below the knee with a straight hem. Lined.</p>
-        <p>95% Polyester, 5% Elastane</p>
-        <p>Made in Australia</p>
-        <p>Model is 173cm/5'8" and wears a size UK 8.</p>
+        <h4>Descripción</h4>
+        <p>EVOD 900 mah Kit para principiantes.
+
+          Evod ventaja clearomizer: 
+          1. Bobina Reemplazable
+          2. diseño de bobina inferior.
+          3. Enorme Vapor, Sin olor a quemado.
+          4. Fácil de recarga y limpieza
+          5. rosca eGo Evod
+          6. compatible con eGo-T, eGo-C, eGo-V, Serie 510. </p>
       </div>
       <div>
-        <h4>Product Details</h4>
-        <table cellspacing="0">
-          <tbody>
-          <tr>
-            <th>
-              Brand:
-            </th>
-            <td>
-              Bec &amp; Bridge
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Colour:
-            </th>
-            <td>
-              Blue
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Material:
-            </th>
-            <td>
-              95% Polyester, 5% Elastane
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <h4>Contiene</h4>
+       <p>Un juego contiene: <br>
+        - Baterías 2 pcs  <br>
+        - Cargador de pared de las PC 1  <br>
+        - Caso del ego de las PC 1  <br>
+        - Pcs Manual 1  <br>
+        - Atomizadores Evod 2 piezas  <br>
+        - Cargador USB de las PC 1  <br>
+        - Tapa de pulverización de 2 PC <br></p>
       </div>
     </div>
     <div class="product-info">
@@ -65,31 +46,24 @@
         <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
                 [style.background]="'#883C73'"></button>
       </div>
-      <div class="size-box">
-        <p>Select size</p>
-        <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xs'">XS</button>
-        <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
-        <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
-        <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'l'">L</button>
-        <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xl'">XL</button>
-      </div>
+  
       <div class="quantity">
-        <ui-qt-input [ngModel]="4"></ui-qt-input>
+        <ui-qt-input [ngModel]="1"></ui-qt-input>
       </div>
-      <button class="add" [uiButton] [icon]="'cart'">Add to cart</button>
+      <button class="add" onclick="alert(&quot;Producto agregado al carrito&quot;)" value="Click Aquí para ver el ALERTA" routerLink="/bag"[uiButton] [icon]="'cart'">Añadir a carrito</button>
+   
       <div>
-        <h4>Delivery Information</h4>
-        <p>UK next day delivery available until 9pm plus over 160 countries shipped to worldwide.</p>
+        <h4>Información de Entrega</h4>
+        <p>llegara 2-5 dias habiles a tu domicilio<br> Y se pagara al momento de entrega</p>
       </div>
       <div>
-        <h4>Returns Policy</h4>
-        <p>We are confident that you will be happy with your purchase. However, if you are not satisfied you can return
-          your item for a full refund.</p>
+        <h4>Politica de Devolucion</h4>
+        <p>1 mes de garantia por defecto de fabrica</p>
       </div>
     </div>
   </div>
   <div class="recently-viewed">
-    <h4>Recently viewed:</h4>
+    <h4>Visto Recientemente:</h4>
     <div class="list-cards">
       <app-card *ngFor="let product of recent" [product]="product"></app-card>
     </div>

@@ -6,11 +6,11 @@ export class DataService {
   products: Product[] = [
     {
       id: 1,
-      title: 'EVOD Mega Kanger 1900 mah',
-      description: 'EVOD Mega Kanger 1900 mah con un voltaje',
+      title: 'EVOD 900mah Ah kit doble',
+      description: 'EVOD 900mah Ah kit doble',
       picture: '/assets/p1-1.jpg',
-      price: 170,
-      sale: 145,
+      price: 650,
+      sale: 600,
       photos: [
         {
           thumb: '/assets/p1-1.jpg',
@@ -36,11 +36,11 @@ export class DataService {
     },
     {
       id: 2,
-      title: 'Spyder Women\'s Willow Snow Jacket',
-      description: 'The Spyder Women\'s Willow Snow Jacket has a long, lean silhouette and athletic fit!',
+      title: 'Kanger Subvod Kit',
+      description: 'Kanger Subvod Kit - 1,300 mah @ 3.2 ml',
       picture: '/assets/p2-1.jpg',
-      price: 400,
-      sale: 350,
+      price: 850,
+      sale: 800,
       photos: [
         {
           thumb: '/assets/p2-1.jpg',
@@ -56,11 +56,11 @@ export class DataService {
     },
     {
       id: 3,
-      title: 'Women\'s Autumn Insulated Snowboard Jacket',
-      description: 'The Jacket is tailored to fit your needs.',
+      title: 'X6 KIT MOD Aluminio VV',
+      description: 'X6 KIT - 1300 mah Voltaje Variable',
       picture: '/assets/p3-1.jpg',
-      price: 90,
-      sale: 68,
+      price: 760,
+      sale: 700,
       photos: [
         {
           thumb: '/assets/p3-1.jpg',
@@ -76,11 +76,11 @@ export class DataService {
     },
     {
       id: 4,
-      title: 'Burton Women\'s Expedition 1/4 Zip Base Layer Top',
-      description: 'Built-in Stretch 360° for rider-friendly mobility, and zip-venting to regulate active body temps.',
+      title: 'EVOD 650m Ah Kit Sencillo',
+      description: 'EVOD 650 mah Kit Sencillo',
       picture: '/assets/p4-1.jpg',
-      price: 79,
-      sale: 55,
+      price: 550,
+      sale: 450,
       photos: [
         {
           thumb: '/assets/p4-1.jpg',
@@ -96,11 +96,11 @@ export class DataService {
     },
     {
       id: 5,
-      title: 'Nils Women\'s Lucy Print Leggings',
-      description: 'The are heavyweight, fleece backed, body hugging baselayer that will move with you down the slopes. ',
+      title: 'EVOD 650 mah Kit Sencillo',
+      description: 'Kanger Kone Kit -Wint',
       picture: '/assets/p5-1.jpg',
-      price: 125,
-      sale: 109,
+      price: 1250,
+      sale: 1050,
       photos: [
         {
           thumb: '/assets/p5-1.jpg',
@@ -116,11 +116,11 @@ export class DataService {
     },
     {
       id: 6,
-      title: 'Burton Women\'s Starr Vest',
-      description: 'Is the epitome of comfort and versatility thanks to a sweater fleece fabric.',
+      title: 'Kanger Kone Starter Kit - 3,000 mah @3.5ml',
+      description: 'Kanger Kone Kit -Wint',
       picture: '/assets/p6-1.jpg',
-      price: 75,
-      sale: 60,
+      price: 1175,
+      sale: 1030,
       photos: [
         {
           thumb: '/assets/p6-1.jpg',
@@ -146,11 +146,11 @@ export class DataService {
     },
     {
       id: 7,
-      title: 'Dylan by True Grit Women\'s Flannel & Sherpa Road Trip Vest',
-      description: 'Is a nice piece to cap of your fall or winter wardrobe.',
+      title: 'Joyetech AIO D22 kit - 2ml, 1500 mah',
+      description: ' Joyetech AIO- WINT',
       picture: '/assets/p7-1.jpg',
-      price: 124,
-      sale: 90,
+      price: 670,
+      sale: 570,
       photos: [
         {
           thumb: '/assets/p7-1.jpg',
@@ -171,11 +171,11 @@ export class DataService {
     },
     {
       id: 8,
-      title: 'O\'Neill Exalt Ski Pants',
-      description: 'For the technical side they have 10K/10K waterproofing & breathability and O\'Neill Hyperdry to keep you warm and dry.',
+      title: 'Kanger TopBox Nano 3.2 ml',
+      description: 'Topbox Nano Rosa -EVER',
       picture: '/assets/p8-1.jpg',
-      price: 140,
-      sale: 135,
+      price: 1550,
+      sale: 1450,
       photos: [
         {
           thumb: '/assets/p8-1.jpg',
@@ -196,8 +196,8 @@ export class DataService {
     },
     {
       id: 9,
-      title: 'Strafe Outerwear Capital Snow Pants',
-      description: 'Will repel any type of weather you encounter during your mountain adventure',
+      title: 'Joyetech egrip OLED 20-30W, WW, 3.6 ml',
+      description: 'egrip OLED - LilH',
       picture: '/assets/p9-1.jpg',
       price: 350,
       sale: 339,
